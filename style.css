@@ -1,0 +1,286 @@
+/*@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Chivo:400,900,400italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Sarina);*/
+
+  body {
+    background: #F2F2F2;
+  }
+
+  @media screen and (min-width: 980px) { /* Desktop */
+    body {
+      /*background: red;*/
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) { /* Tablet */
+    body {
+      background: green;
+    }
+
+    #side-wrapper {
+      width: 100%;
+      display: inline-block;
+      position: relative;
+    }    
+  }  
+
+  @media only screen and (max-width: 480px) { /* Mobile */
+    body {
+      background: blue;
+    }
+
+    #side-wrapper {
+      width: 100%;
+      display: inline-block;
+      position: relative;
+    }
+  }
+
+  * {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #side-wrapper{
+    text-align: center;
+    /*background-color: green;*/
+  }
+
+  #side-wrapper h1 {
+    font-family: 'Sarina', cursive;
+    font-weight: 900;
+    font-size: 6em;
+    line-height: 1em;
+    color: #FF667A;
+  }
+
+  #side-wrapper h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+  }
+
+  #game-wrapper{
+    /*background-color: pink;*/
+    position: relative;
+  }
+
+  section {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+
+  }
+
+  .square {
+    float: left;x
+    position: relative;
+    width: 21%;
+    padding-bottom: 21%;
+    margin: 1.25%;
+    display: inline-block;
+    background-color: green;
+  }
+
+  .face.square_front {
+    padding-bottom: 100%; 
+  }
+
+  .face.square_back {
+    padding-bottom: 100%; 
+  }
+  
+  .flip {
+    -webkit-transition: 1s;
+            transition: 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+  }
+
+  .flip.flipped {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+
+  .square_front {
+    background-color: #3E8EB2;
+    z-index: 5;
+  }
+  
+  .square_front, .square_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .square_front, .square_back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+
+.square_front {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+
+.square_back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+  .shadow {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  }
+
+  /*  Les Demoiselles d'Avignon, 1907  */
+  #one {
+    background-image: url("http://www.leiweb.it/celebrity/personaggi-news/2011/gallery/img/11/picasso.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    /*-webkit-transform: rotateY(-180deg);*/
+            /*transform: rotateY(-180deg);*/
+  }
+  
+  /*  Pablo Picasso  */
+  #two {
+    background-image: url("http://i.huffpost.com/gen/831576/thumbs/s-PABLO-PICASSO-large640.jpg?4");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    /*-webkit-transform: rotateY(-180deg);*/
+            /*transform: rotateY(-180deg);*/
+  }
+
+  /*  Brillo Boxes  */
+  #three {
+    background-image: url("http://www.glenwoodnyc.com/manhattan-living/wp-content/uploads/2012/09/regarding-warhol-met-brillo-boxes.jpeg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+
+  /*  Andy Warhol  */
+  #four {
+    background-image: url("http://artobserved.com/artimages/2008/10/warrol_presentazione.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+
+  /*  One: Number 31, 1950  */
+  #five {
+    background-image: url("http://www.moma.org/images/dynamic_content/exhibition_page/57560.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+  
+  /*  Jackson Pollock  */
+  #six {
+    background-image: url("https://thenypost.files.wordpress.com/2014/09/jacksonportrait.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+
+  /*  The Stroll  */
+  #seven {
+    background-image: url("https://artzonesdotnet.files.wordpress.com/2013/04/woman_parasol11.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+  
+  /*  Claude Monet  */
+  #eight {
+    background-image: url("http://www.claude-monet.com/images/claude-monet.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+
+  /*  Paul Cezanne    */
+  #nine {
+    background-image: url("http://www.thefamouspeople.com/profiles/images/paul-cezanne-2.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+  
+  /*  Basket of Apples  */
+  #ten {
+    background-image: url("https://learnodo-newtonic.com/wp-content/uploads/2014/02/The-Basket-of-Apples-by-Paul-Cezanne.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+
+  /*  Georges Seurat  */
+  #eleven {
+    background-image: url("http://static.standard.co.uk/s3fs-public/thumbnails/image/2014/03/28/12/Georges%20Seurat.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+  
+  /*  Sunday on the Island of La Grande Jatte  */
+  #twelve {
+    background-image: url("http://www.ilibrarian.net/art/georges_seurat_a_sunday_on_the_grande_jatte_lg.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+
+  /*  Frida Kahlo  */
+  #thirteen {
+    background-image: url("http://www.tradesy.com/blog/wp-content/uploads/2015/07/Frida-Portrait-Thumbnail.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+  
+  /*  The Two Fridas, 1939  */
+  #fourteen {
+    background-image: url("http://www.fridakahlo.org/images/paintings/the-two-fridas.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+
+  /*  Georgia O'Keefe  */
+  #fifteen {
+    background-image: url("http://www.flynnsfineart.com/wp-content/uploads/2014/03/georgia.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+  
+  /*  Ram's Head with Hollyhock  */
+  #sixteen {
+    background-image: url("http://www.georgiaokeeffe.net/images/paintings/rams-head.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+  }
+
+
+
+  /*  Footer  */
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF667A;
+    height: 60px;
+  }
